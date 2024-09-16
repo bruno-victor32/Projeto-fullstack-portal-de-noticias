@@ -40,6 +40,6 @@ a:hover{ /*Quando passar a mão em cima do link vai mudar a cor*/
   color: var(--brand-color-light);
 }
 
-h1, h2, h3 { /*Essas tags são filhas do body e vão herdar do body as configurações de fonte que foi aplicado no body*/
+h1, h2, h3 { /*Essas tags são filhas do body e vão herdar do body as configurações de fonte que foi aplicado no body, ou seja, não quero as fontes padrão do navegador e mantenha as fontes herdadas*/
   font: inherit;
 }
