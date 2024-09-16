@@ -1,0 +1,24 @@
+#primary {
+  padding-block: 20px; /* Block significa que estou pegando o eixo vertical.Somente em cima e embaixo será aplicado 20px*/
+
+  div{
+    display: flex; 
+    align-items: center; /*Alinhando os itens*/
+    gap: 8px; /*Separação entre os elementos de 8px*/
+  }
+
+  /*Nesting css*/
+  div:nth-child(2) { /*Quero pegar a segunda "div" que está dentro do id "primary"*/
+    margin-inline:auto; /*Significa que vou pegar esquerda e direita*/
+  }
+
+  div:nth-child(3){/*Quero pegar a terceira "div" que está dentro do id "primary"*/
+    justify-self: end;
+  }
+}
+
+#secondary{
+  padding-block: 14px;
+  border: solid 1px var(--stroke-color);
+  border-inline: none;/*Removendo as bordas das laterais*/
+}

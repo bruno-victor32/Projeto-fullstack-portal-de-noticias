@@ -43,3 +43,18 @@ a:hover{ /*Quando passar a mão em cima do link vai mudar a cor*/
 h1, h2, h3 { /*Essas tags são filhas do body e vão herdar do body as configurações de fonte que foi aplicado no body, ou seja, não quero as fontes padrão do navegador e mantenha as fontes herdadas*/
   font: inherit;
 }
+
+.container { /*Container vai conter as coisas*/
+  max-width: 1280px; /*Largura máxima*/
+  padding-inline: 32px;/*Inline significa que estou pegando o eixo horizontal.Somente em esquerda e direita será aplicado 32px*/
+  margin-inline: auto;
+}
+
+/*Utility-first é quando tem uma classe que vai fazer somente uma coisa*/
+.grid{
+  display: grid;
+}
+
+.grid-flow-col{
+  grid-auto-flow: column; /*Deixando as linhas em colunas do header*/
+}
