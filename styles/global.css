@@ -1,1 +1,22 @@
 /* Inserindo conteúdo de configuração global*/
+
+*{ /*Resetando o CSS, utilizando o seletor global*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Permite fazer os cálculos da caixa de borda a borda*/
+}
+
+/*Variáveis do CSS*/
+:root{
+ --brand-color-light: #60A5FA;
+ --brand-color-dark: #1D4ED8;
+ --bg-color: #0F172A;
+ --stroke-color:#1E293B;
+ --text-color-primary: #F1F5F9;
+ --text-color-secondary:#CBD5E1;
+}
+
+body{
+  color: var(--text-color-primary); /*Cor da fonte do texto*/
+  background-color: var(--bg-color); /*Cor de fundo da página*/
+}
