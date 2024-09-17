@@ -1,0 +1,16 @@
+/*Utility-first é quando tem uma classe que vai fazer somente uma coisa*/
+.grid{
+  display: grid;
+}
+
+.grid-flow-col{
+  grid-auto-flow: column; /*Deixando as linhas em colunas do header*/
+}
+
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr; /*O destaque terá duas colunas com 4 fts no total*/
+}
+
+.gap-16 {
+  gap: 16px; /*Espaçamento nas imagens do destaque*/
+}

@@ -1,0 +1,7 @@
+#featured{ /*Preciso observer todas imagens que estão dentro do featured*/
+  img {
+    height: 100%; /*Altura de 100% vai deixar a imagem cobrindo o espaço que falta*/
+    object-fit:cover; /*Faz a ft realizar a cobertura de todo espaço sobrando*/
+    border-radius: 4px; /*Arredondar as bordas das imagens*/
+  }
+}
