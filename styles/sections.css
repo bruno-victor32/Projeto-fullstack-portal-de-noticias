@@ -2,6 +2,25 @@
   img {
     height: 100%; /*Altura de 100% vai deixar a imagem cobrindo o espaço que falta*/
     object-fit:cover; /*Faz a ft realizar a cobertura de todo espaço sobrando*/
-    border-radius: 4px; /*Arredondar as bordas das imagens*/
+
   }
 }
+
+.card {
+  border-radius: 4px; /*Arredondar as bordas das imagens*/
+  overflow: hidden;/*Transbordamos, ou seja, esconda tudo que passa da caixa*/
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    inset: 0;
+    top: 50%;/*Degradê vai iniciar a partir do meio*/
+    background: linear-gradient(
+      180deg,  /*Angulação que eu quero*/
+      transparent 0%,  /*Primeira cor será a transparent saindo do 0%*/
+      #020617 100% /*Cor que eu quero*/
+    );
+  }
+}
+
+
