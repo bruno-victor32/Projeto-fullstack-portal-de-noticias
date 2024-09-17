@@ -28,6 +28,10 @@
     bottom: 0;
     padding: 24px; /*Espaçamento de 24px*/
 
+    &:has(.text-lg) { /*has é um tipo de seletor que vai observar se tem dentro do figcaption uma tag "text-lg", se tiver será aplicado esse padding de 12px*/
+      padding: 12px;
+    }
+
     h2{
       margin-top: 8px;
     }
