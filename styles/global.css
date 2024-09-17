@@ -57,3 +57,15 @@ img{
 main{
   margin-top: 40px;
 }
+
+.content-tag{
+  display: inline-block;/*Quero o mesmo comportamento tanto em uma tag div ou em uma tag span*/
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px; /*4px em cima e embaixo, nas laterais 8px*/
+  border-radius: 4px;
+  font: 500 10px/1.2 var(--text-span);/*Fonte de peso 500  vai ter 10px e ser 1.2 de altura de linha */
+  text-transform: uppercase;/* Aumentando a altura da linha*/
+  letter-spacing: 0.04em;/*Espaçamento entre as letras*/
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);/*Aplicando sombra na caixa, não houve um posicionamento horizontal, teve um posicionamento vertical de 4px, teve um espalhamento de 16px*/
+}

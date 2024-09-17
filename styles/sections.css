@@ -10,6 +10,7 @@
   border-radius: 4px; /*Arredondar as bordas das imagens*/
   overflow: hidden;/*Transbordamos, ou seja, esconda tudo que passa da caixa*/
   position: relative;
+  
   &::before{
     content:"";
     position: absolute;
@@ -21,6 +22,18 @@
       #020617 100% /*Cor que eu quero*/
     );
   }
+
+  figcaption{
+    position: absolute;
+    bottom: 0;
+    padding: 24px; /*Espaçamento de 24px*/
+
+    h2{
+      margin-top: 8px;
+    }
+
+  }
+
 }
 
 
