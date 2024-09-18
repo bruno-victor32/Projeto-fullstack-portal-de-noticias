@@ -1,43 +1,91 @@
+section header{
+  border-top: 1px solid var(--stroke-color);
+  padding-block: 12px 24px; /*12px em cima e 24px em baixo*/
+  font: var(--text-span);
+
+  a{
+    justify-self: end;
+    align-items: center;
+    gap: 8px;
+
+    span{
+      background-image: url(../assets/icons/ArrowRight.svg);
+      width: 16px; /*largura*/
+      height: 16px;/*Altura*/
+    }
+
+    &:hover span {
+      background-image: url(../assets/icons/ArrowRight-hover.svg) ;
+    }
+  }
+}
+
 #featured{ /*Preciso observer todas imagens que estão dentro do featured*/
   img {
     height: 100%; /*Altura de 100% vai deixar a imagem cobrindo o espaço que falta*/
     object-fit:cover; /*Faz a ft realizar a cobertura de todo espaço sobrando*/
 
   }
-}
 
-.card {
-  border-radius: 4px; /*Arredondar as bordas das imagens*/
-  overflow: hidden;/*Transbordamos, ou seja, esconda tudo que passa da caixa*/
-  position: relative;
-  
-  &::before{
-    content:"";
-    position: absolute;
-    inset: 0;
-    top: 50%;/*Degradê vai iniciar a partir do meio*/
-    background: linear-gradient(
-      180deg,  /*Angulação que eu quero*/
-      transparent 0%,  /*Primeira cor será a transparent saindo do 0%*/
-      #020617 100% /*Cor que eu quero*/
-    );
-  }
 
-  figcaption{
-    position: absolute;
-    bottom: 0;
-    padding: 24px; /*Espaçamento de 24px*/
-
-    &:has(.text-lg) { /*has é um tipo de seletor que vai observar se tem dentro do "figcaption" tem uma tag com o "text-lg", se tiver será aplicado esse padding de 12px*/
-      padding: 12px;
+  .card {
+    border-radius: 4px; /*Arredondar as bordas das imagens*/
+    overflow: hidden;/*Transbordamos, ou seja, esconda tudo que passa da caixa*/
+    position: relative;
+    
+    &::before{
+      content:"";
+      position: absolute;
+      inset: 0;
+      top: 50%;/*Degradê vai iniciar a partir do meio*/
+      background: linear-gradient(
+        180deg,  /*Angulação que eu quero*/
+        transparent 0%,  /*Primeira cor será a transparent saindo do 0%*/
+        #020617 100% /*Cor que eu quero*/
+      );
     }
 
-    h2{
+    figcaption{
+      position: absolute;
+      bottom: 0;
+      padding: 24px; /*Espaçamento de 24px*/
+
+      &:has(.text-lg) { /*has é um tipo de seletor que vai observar se tem dentro do "figcaption" tem uma tag com o "text-lg", se tiver será aplicado esse padding de 12px*/
+        padding: 12px;
+      }
+
+      h2{
+        margin-top: 8px;
+      }
+
+    }
+
+  }
+}
+
+#weekly{ /*Semanalmente*/
+
+  &>div{
+    grid-template-columns: repeat(4, 292px) ;
+  }
+
+  img{
+    height: 160px; /*Altura*/
+  }
+
+  figure {
+    position: relative;
+
+    .content-tag{
+      position: absolute;
+      top: 8px;
+      left: 8px;
+    }
+
+    p{
       margin-top: 8px;
+      font-weight: 800; /*Peso da fonte*/
     }
-
   }
-
+  
 }
-
-
