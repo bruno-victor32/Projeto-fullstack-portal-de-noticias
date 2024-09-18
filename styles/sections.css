@@ -1,20 +1,20 @@
-section header{
+section header{ /*Todo section que ter um header dentro vai receber as conf abaixo*/
   border-top: 1px solid var(--stroke-color);
-  padding-block: 12px 24px; /*12px em cima e 24px em baixo*/
+  padding-block: 12px 24px; /* espaçamento no eixo vertical,12px em cima e 24px em baixo*/
   font: var(--text-span);
 
   a{
-    justify-self: end;
-    align-items: center;
+    justify-self: end; /*"Ver tudo" vai ser movido para a direita*/
+    align-items: center; /*Alinhando*/
     gap: 8px;
 
-    span{
+    span{/*Criando a seta*/
       background-image: url(../assets/icons/ArrowRight.svg);
-      width: 16px; /*largura*/
-      height: 16px;/*Altura*/
+      width: 16px; /*largura da seta*/
+      height: 16px;/*Altura da seta*/
     }
 
-    &:hover span {
+    &:hover span {/*Quando passar o mouse sobre a seta, vai ter outra imagem*/
       background-image: url(../assets/icons/ArrowRight-hover.svg) ;
     }
   }
@@ -65,12 +65,12 @@ section header{
 
 #weekly{ /*Semanalmente*/
 
-  &>div{
-    grid-template-columns: repeat(4, 292px) ;
+  &>div{/*Primeiro nível de div*/
+    grid-template-columns: repeat(4, 292px) ; /*Quero 4 colunas de imagem de largura 292px*/
   }
 
   img{
-    height: 160px; /*Altura*/
+    height: 160px; /*Altura da imagem*/
   }
 
   figure {
@@ -78,8 +78,8 @@ section header{
 
     .content-tag{
       position: absolute;
-      top: 8px;
-      left: 8px;
+      top: 8px; /*Afastando do topo*/
+      left: 8px; /*Afastando da esquerda*/
     }
 
     p{

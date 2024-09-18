@@ -15,6 +15,9 @@
   gap: 16px; /*Espaçamento nas imagens do destaque*/
 }
 
+.gap-32 {
+  gap: 16px; /*Espaçamento nas imagens do */
+}
 .text-2xl{ /*Texto duas vezes extra grande*/
   font: var(--h1);
 }
